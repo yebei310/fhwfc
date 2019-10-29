@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="接口" verbose="1" preserve-order="true" parallel="false">
+    <test name="获取所有站点数据（wap）">
+        <classes>
+            <class name="com.qa.tests.community.AllSiteData">
+            </class>
+        </classes>
+    </test>
+    <test name="小区明细">
+        <classes >
+            <class name="com.qa.tests.community.CommunityDetail"></class>
+        </classes>
+    </test>
+    <test name="查询">
+        <classes>
+            <class name="com.qa.tests.community.FilterCondition">
+                <!--<methods>-->
+                    <!--<include name="login"></include>-->
+                    <!--&lt;!&ndash;<include name="getApi"></include>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<include name="deleteApi"></include>&ndash;&gt;-->
+                <!--</methods>-->
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.qa.report.ExtentTestNGReporterListener"></listener>
+    </listeners>
+</suite>
